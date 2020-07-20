@@ -31,7 +31,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 测试图片
 
-![1.png](pic\1.png)
+![1.png](pic/1.png)
 
 测试土拍你
 
