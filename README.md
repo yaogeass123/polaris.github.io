@@ -27,11 +27,9 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### 图片test
-
 测试图片
 
-![1.png](pic/1.png)
+
 
 测试土拍你
 
@@ -45,19 +43,15 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 背景：
 
-目的：
-
-设计：
-搭建微服务，目的是实现消息的自动分流与及时展示。
-
-背景：对于线上服务出现了故障或错误应该有实时的反馈途径，目前反馈到钉钉群中，存在以下问题。
+对于线上服务出现了故障或错误应该有实时的反馈途径，目前反馈到钉钉群中，存在以下问题。
 
 1. 钉钉消息机器人目前一分钟只能发送20条消息，超过该限制时，会被限流十分钟。使用机器人发送消息时，若一时间推给机器人发送消息的请求过多（每分钟超过二十条），会导致超过数量的消息发不出去，并且机器人被限流。
 2. 当前消息发送时需要指定一个机器人，而一个群最多可以指定6个机器人。
-3. 目前所有的异常都集中在部门兜底群中进行警报，网络抖动时产生的大量异常堆栈有时会淹没需要关注的错误异常。
-4. 很多想要通过钉钉发送的消息通过error日志的形式报警到了兜底中。 兜底群中所有报警都集中在了部门兜底群中，比较杂乱。
+3. 目前所有的异常都集中在群中进行警报，网络抖动时产生的大量异常堆栈有时会淹没需要关注的错误异常。
+4. 很多想要通过钉钉发送的消息通过error日志的形式进行警报。
+5. 大量警报按部门报警，较为杂乱，无配置规则。
 
-解决问题：
+方法：
 
 做一个钉钉群消息发送平台，对外提供接口，外部通过调用接口发送钉钉消息。
 
@@ -72,24 +66,59 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 #### 二、Alibaba Coding Guidelines增强套件
 
-[Alibaba Coding Guidelines增强套件](https://github.com/yaogeass123/p3c-pmd-ex)
+[Alibaba Coding Guidelines增强套件](https://github.com/yaogeass123/p3c-pmd-ex)是魔改Alibaba Java Coding Guidelineslines的增强插件，实现了自定义的九条规则规范，实时显示。
 
-背景：
+目的：在开发过程中及时发现代码的规范问题与潜在的错误。
 
-目的：
+1. 同一manager中非事务函数调用事务函数，导致事务失效。
+
+2. 使用乐观更新。
+
+3. POJO 类中布尔类型的变量，都不要加 is 前缀，否则部分框架解析会引起序列化错误。
+
+4. 枚举类名带上 En 后缀，枚举成员名称需要全大写，单词间用下划线隔开。  
+
+5. catch中打印异常信息不允许使用info。
+
+6. @Value注解使用SpEL表达式。
+
+7. 对 trace/debug/info 级别的日志输出，必须使用条件输出形式或者使用占位符的方式。
+
+8. 可以通过预检查方式规避的 RuntimeException 异常不应该通过 catch 的方式来处理。
+
+9. 异常信息应该包括两类信息：案发现场信息和异常堆栈信息。不要把堆栈信息吃掉
+   
+
+效果：
+
+![setting.png](pic/setting.png)
+
+提示样例：
+
+   ![invalidCase.png](pic/invalidCase.png)
 
 
 
-Alibaba Java Coding Guidelineslines是依据《阿里巴巴Java开发手册》编写的插件，IDEA上可在市场里直接安装。对该插件进行魔改，实现了自定义的十条规则规范，实时显示。
+
 #### 三、SpEL表达式检测IDEA插件
 
-[SpEL表达式检测IDEA插件](https://github.com/yaogeass123/myPlugin)
+[SpEL表达式检测IDEA插件](https://github.com/yaogeass123/myPlugin)检测项目内所有@Value注解的内容，使用正则表达式进行匹配，看是否使用了正确的SpEL表达式并且有默认值。为什么写这个小工具呢，因为有一次发现SpEL表达式写错后修改时有漏改情况。
+
+安装好插件后toolbar会新加一个按钮，点击执行。
+
+效果：
+
+![toolbar](pic/toolbar.png)
+
+![spel](pic/spel.png)
+
+
 
 #### 四、SpEL表达式检测Maven插件
 
-[SpEL表达式检测Maven插件](https://github.com/yaogeass123/maven-check-plugin)
+[SpEL表达式检测Maven插件](https://github.com/yaogeass123/maven-check-plugin)目的与原理同上，只不过写程maven插件，在项目打包时进行检测，如果存在错误则使打包失败。
 
-Spring中@Value注解需要通过SpEL表达式动态配置值，当表达式格式错误时注入失败。写了两个小插件，对表达式进行检测，避免表达式错误导致服务上线后配置值无法动态生效。IDEA插件通过按钮的方式扫描项目路径，便利每一行代码进行正则匹配，寻找所有的SpEL表达式，进行正确与否的展示。MAVEN插件则是在项目打包时进行检测，如果存在错误则使打包失败。
+
 
 #### 五、C2MSVL语言转换工具
 
