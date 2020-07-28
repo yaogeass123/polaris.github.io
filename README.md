@@ -1,39 +1,34 @@
-## title 1
+[TOC]
 
-a
+-----
 
+## 个人介绍
 
-### subtitle
+#### 一、教育经历
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+```
+西电电子科技大学计算机技术		硕士学位	  2016~2019
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+西安电子科技大学计算机科学与技术  学士学位		2012~2016	
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+在校期间勤勤恳恳，受老师同学喜爱。通过CET6，荣获院三好学生、优秀学生干部、优秀研究生等奖项。
 
-测试图片
+#### 二、工作经历
 
+```
+毕业后先工作与浙江仟和网络科技有限公司（即点我达）调度部门，工作于调度部门，负责日常调度系统业务开发与维护、问题查询及相关生态建设。
 
+2020年初公司被阿里菜鸟BU收购，融入菜鸟体系后工作于订单平台，负责实操层面订单相关业务的系统开发与维护、线上问题查询及系统迁移与融合。一直至今。
+```
 
-测试土拍你
+工作期间兢兢业业，按时优质完成业务需求，注重代码质量与规范，熟悉公司业务发展与规划，有一定自己的见解，善于沟通交流，对业务需求的解决方式提出自己的建议。能够独立解决问题，并推动上下游，负责整个链路进展。
 
-### 个人项目
+三、联系方式
+
+​	邮箱：495162720@qq.com
+
+## 个人项目
 
 工作学习中，自己独立开发的一些项目和玩具
 
@@ -56,12 +51,13 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 做一个钉钉群消息发送平台，对外提供接口，外部通过调用接口发送钉钉消息。
 
 通过使用该系统进行发送，解决的问题：
-1、消息聚合：某一时间段内，重复消息只发送一次。
-2、机器人一定不被限流：避免一分钟内某个机器人发送消息过多导致被限流的场景
-3、消息的自动分流：通过配置，可以将同一应用不同消息发送到不同的群中，也可以将不同应用的消息发送到同一群中。消息选择群的规则可配置。
-4、消息的正常情况下的及时触达：保证消息一定会在对应的群中进行报警。
-5、重要消息在大流量请求下的优先发送：某一群同时有大量消息待发送时，对消息进行优先级排序，优先发送重要消息。
-6、消息发送失败有相应的异常处理与反馈逻辑：消息发送失败时，进行对应的逻辑判断，对于部分失败原因进行反馈与处理。
+
+1. 消息聚合：某一时间段内，重复消息只发送一次。
+2. 机器人一定不被限流：避免一分钟内某个机器人发送消息过多导致被限流的场景
+3. 消息的自动分流：通过配置，可以将同一应用不同消息发送到不同的群中，也可以将不同应用的消息发送到同一群中。消息选择群的规则可配置。
+4. 消息的正常情况下的及时触达：保证消息一定会在对应的群中进行报警。
+5. 重要消息在大流量请求下的优先发送：某一群同时有大量消息待发送时，对消息进行优先级排序，优先发送重要消息。
+6. 消息发送失败有相应的异常处理与反馈逻辑：消息发送失败时，进行对应的逻辑判断，对于部分失败原因进行反馈与处理。
 
 
 #### 二、Alibaba Coding Guidelines增强套件
@@ -122,5 +118,14 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 #### 五、C2MSVL语言转换工具
 
-研究生毕业设计
+研究生毕业设计项目，实现一个语言的自动转换系统，通过词语法分析、语义分析和转换等过程将C语言自动的转换成等价的MSVL语言。通过对MSVL程序进行建模仿真运算，从而间接地找出源C程序的性质，验证其正确性。
 
+论文地址：
+1.毕业设计论文： [《C-to-MSVL转换系统关键技术研究》](https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD202001&filename=1020003780.nh&v=MDg4MTlNVkYyNUhyTzRIZGJFcjVFYlBJUjhlWDFMdXhZUzdEaDFUM3FUcldNMUZyQ1VSN3FmWU9Sb0Z5N25Xci8=)
+2.外文期刊，Theoretical Computer Science，第五作者： [《Translating Xd-C programs to MSVL programs》](https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=SJPD&dbname=SJPDLAST&filename=SJPDD889ECD596A964C98269DBC6288FCA1C&v=Mjg3MjMrQlhvOXZCOGI2RGwwUEEyUnFoQTljY1RuTkx2c0NKVWFGMXVRVXIvUEpsY1NibUtDR1lDR1FsZkJyTFV5NU41aHdyMit4S2c9TmlmYmFzZXdGdGk1M1B0QWJlMQ==)
+
+
+
+最后附一张当年帅帅的生活照~
+
+![pic/1561274344242.jpeg](pic/1561274344242.jpeg)
