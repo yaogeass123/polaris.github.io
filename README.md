@@ -200,9 +200,8 @@
 
 论文地址：
 
-1.毕业设计论文： [《C-to-MSVL转换系统关键技术研究》](https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD202001&filename=1020003780.nh&v=MDg4MTlNVkYyNUhyTzRIZGJFcjVFYlBJUjhlWDFMdXhZUzdEaDFUM3FUcldNMUZyQ1VSN3FmWU9Sb0Z5N25Xci8=)
-
-2.外文期刊，Theoretical Computer Science，第五作者： [《Translating Xd-C programs to MSVL programs》](https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=SJPD&dbname=SJPDLAST&filename=SJPDD889ECD596A964C98269DBC6288FCA1C&v=Mjg3MjMrQlhvOXZCOGI2RGwwUEEyUnFoQTljY1RuTkx2c0NKVWFGMXVRVXIvUEpsY1NibUtDR1lDR1FsZkJyTFV5NU41aHdyMit4S2c9TmlmYmFzZXdGdGk1M1B0QWJlMQ==)
+1. 毕业设计论文： [《C-to-MSVL转换系统关键技术研究》](https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD202001&filename=1020003780.nh&v=MDg4MTlNVkYyNUhyTzRIZGJFcjVFYlBJUjhlWDFMdXhZUzdEaDFUM3FUcldNMUZyQ1VSN3FmWU9Sb0Z5N25Xci8=)
+2. 外文期刊，Theoretical Computer Science，第五作者： [《Translating Xd-C programs to MSVL programs》](https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=SJPD&dbname=SJPDLAST&filename=SJPDD889ECD596A964C98269DBC6288FCA1C&v=Mjg3MjMrQlhvOXZCOGI2RGwwUEEyUnFoQTljY1RuTkx2c0NKVWFGMXVRVXIvUEpsY1NibUtDR1lDR1FsZkJyTFV5NU41aHdyMit4S2c9TmlmYmFzZXdGdGk1M1B0QWJlMQ==)
 
 
 
