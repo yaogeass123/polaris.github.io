@@ -132,21 +132,13 @@
 目的：在开发过程中及时发现代码的规范问题与潜在的错误。
 
 1. 同一manager中非事务函数调用事务函数，导致事务失效。
-
 2. 使用乐观更新。
-
 3. POJO 类中布尔类型的变量，都不要加 is 前缀，否则部分框架解析会引起序列化错误。
-
 4. 枚举类名带上 En 后缀，枚举成员名称需要全大写，单词间用下划线隔开。  
-
 5. catch中打印异常信息不允许使用info。
-
 6. @Value注解使用SpEL表达式。
-
 7. 对 trace/debug/info 级别的日志输出，必须使用条件输出形式或者使用占位符的方式。
-
 8. 可以通过预检查方式规避的 RuntimeException 异常不应该通过 catch 的方式来处理。
-
 9. 异常信息应该包括两类信息：案发现场信息和异常堆栈信息。不要把堆栈信息吃掉
    
 
@@ -207,7 +199,9 @@
 
 
 论文地址：
+
 1.毕业设计论文： [《C-to-MSVL转换系统关键技术研究》](https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CMFD&dbname=CMFD202001&filename=1020003780.nh&v=MDg4MTlNVkYyNUhyTzRIZGJFcjVFYlBJUjhlWDFMdXhZUzdEaDFUM3FUcldNMUZyQ1VSN3FmWU9Sb0Z5N25Xci8=)
+
 2.外文期刊，Theoretical Computer Science，第五作者： [《Translating Xd-C programs to MSVL programs》](https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=SJPD&dbname=SJPDLAST&filename=SJPDD889ECD596A964C98269DBC6288FCA1C&v=Mjg3MjMrQlhvOXZCOGI2RGwwUEEyUnFoQTljY1RuTkx2c0NKVWFGMXVRVXIvUEpsY1NibUtDR1lDR1FsZkJyTFV5NU41aHdyMit4S2c9TmlmYmFzZXdGdGk1M1B0QWJlMQ==)
 
 
